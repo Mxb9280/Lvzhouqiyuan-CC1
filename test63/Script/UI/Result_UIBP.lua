@@ -13,6 +13,7 @@ function Result_UIBP:Construct()
     self.Txt_RedScore = self:GetWidgetFromName("Txt_RedScore")
     self.Txt_BlueScore = self:GetWidgetFromName("Txt_BlueScore")
     self.Btn_BackToLobby = self:GetWidgetFromName("Btn_BackToLobby")
+    self.Btn_BackToLobby = self:GetWidgetFromName("Btn_BackToLobby")
     UGCEventSystem:AddListener(CTCompetitioClientEvent.GameEndEvent, self.OnGameEnd, self)
     self:SetVisibility(ESlateVisibility.Collapsed)
 end
